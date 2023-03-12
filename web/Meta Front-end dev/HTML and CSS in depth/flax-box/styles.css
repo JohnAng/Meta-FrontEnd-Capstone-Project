@@ -1,0 +1,104 @@
+/* flexbox playground */
+* {
+	box-sizing: border-box;
+}
+
+.flexbox-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	/* 
+    display: flex;  Enables flexbox layout 
+	flex-direction: row | row-reverse | column | column-reverse;
+	flex-wrap: nowrap | wrap | wrap-reverse; 
+	justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly; 
+	align-items: stretch | flex-start | flex-end | center | baseline; 
+	align-content: stretch | flex-start | flex-end | center | space-between | space-around;   
+    gap: <length>; 
+	row-gap: <length>;
+	column-gap: <length>; 
+	justify-items: auto | flex-start | flex-end | center | stretch;
+	justify-self: auto | flex-start | flex-end | center | baseline | stretch;
+	place-content: <align-content> || <justify-content>;
+	place-items: <align-items> || <justify-items>;
+    */
+}
+
+.flexbox-item {
+	width: 200px;
+	margin: 10px;
+	border: 3px solid #333;
+	background-color: #99bd7f;
+	/* 
+    order: <integer>;
+	flex-grow: <number>;
+	flex-shrink: <number>; 
+	flex-basis: <length> | auto;
+	flex: none | [ < "flex-grow" > < "flex-shrink" >? || < "flex-basis" > ];
+	align-self: auto | flex-start | flex-end | center | baseline | stretch;
+    flex-flow: <flex-direction> || <flex-wrap>;
+	align-content: <align-content>;
+	justify-items: auto | flex-start | flex-end | center | stretch; 
+	justify-self: auto | flex-start | flex-end | center | baseline | stretch; 
+	place-self: <align-self> || <justify-self>;
+    */
+}
+
+.flexbox-item-1 {
+	flex: 1 0 0;
+	min-height: 100px;
+	flex-shrink: 0;
+	align-self: flex-end;
+	order: 3;
+}
+
+.flexbox-item-2 {
+	min-height: 200px;
+	flex-grow: 2;
+	flex-basis: 0;
+	align-self: center;
+	order: 1;
+}
+
+.flexbox-item-3 {
+	min-height: 300px;
+	flex-grow: 1;
+	flex-basis: 0;
+	order: 2;
+}
+
+/* 
+Flex container properties
+.container {
+	display: flex;  Enables flexbox layout 
+	flex-direction: row | row-reverse | column | column-reverse;  Main axis runs horizontally or vertically 
+	flex-wrap: nowrap | wrap | wrap-reverse;  Don't allow wrapping to new lines, wrap to new lines, or wrap to new lines in reverse 
+	justify-content: flex-start | flex-end | center | space-between |
+		space-around | space-evenly;  Align items along the main axis 
+	align-items: stretch | flex-start | flex-end | center | baseline;  Align items along the cross axis 
+	align-content: stretch | flex-start | flex-end | center | space-between |
+		space-around;  Align rows/columns along the cross axis 
+    gap: <length>;  Sets the gap between flex items 
+	row-gap: <length>;  Sets the gap between rows of flex items 
+	column-gap: <length>;  Sets the gap between columns of flex items 
+	justify-items: auto | flex-start | flex-end | center | stretch;  Align items along both the main and cross axes 
+	justify-self: auto | flex-start | flex-end | center | baseline | stretch;  Override the container's justify-content property for a single item 
+	place-content: <align-content> || <justify-content>;  Align items along both the main and cross axes using shorthand 
+	place-items: <align-items> || <justify-items>;  Align items along both the main and cross axes using shorthand 
+}
+
+Flex item properties 
+.flexbox-item-1 {
+	order: <integer>;  Change the order of the item 
+	flex-grow: <number>;  Allow item to grow beyond its default size 
+	flex-shrink: <number>;  Allow item to shrink beyond its default size 
+	flex-basis: <length> | auto;  Set the default size of the item 
+	flex: none | [ < "flex-grow" > < "flex-shrink" >? || < "flex-basis" > ];  Shorthand for flex-grow, flex-shrink, and flex-basis 
+	align-self: auto | flex-start | flex-end | center | baseline | stretch;  Override the container's align-items property for a single item 
+    flex-flow: <flex-direction> || <flex-wrap>;  Shorthand for flex-direction and flex-wrap 
+	align-content: <align-content>;  Align rows/columns along the cross axis 
+	justify-items: auto | flex-start | flex-end | center | stretch;  Align items along both the main and cross axes 
+	justify-self: auto | flex-start | flex-end | center | baseline | stretch;  Override the container's justify-content property for a single item 
+	place-self: <align-self> || <justify-self>;  Align a single item along both the main and cross axes using shorthand 
+}   */
