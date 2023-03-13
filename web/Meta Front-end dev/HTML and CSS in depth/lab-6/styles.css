@@ -37,7 +37,7 @@
 }
 
 /* Add rules for steps 10 and 11 */
-.letters p:hover:nth-child(odd) {
+.letters:hover p:nth-child(odd) {
 	transform: rotateX(360deg);
 	transition: 1.5s;
 }
