@@ -32,12 +32,12 @@
 
 /* Add rules for steps 8 and 9 */
 .letters:hover p:nth-child(even) {
-	transform: rotateY(360deg);
+	transform: rotateY(720deg) skew(10deg);
 	transition: 0.5s;
 }
 
 /* Add rules for steps 10 and 11 */
 .letters:hover p:nth-child(odd) {
-	transform: rotateX(360deg);
+	transform: rotateX(720deg) skew(10deg);
 	transition: 1.5s;
 }
