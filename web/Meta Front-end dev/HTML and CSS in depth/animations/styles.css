@@ -1,0 +1,119 @@
+:root {
+	--clr-dark: #070a12;
+	--clr-light: #f9f9fb;
+	--clr-accent: #f43f70;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	font-family: "Roboto", sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+	word-spacing: 1.4px;
+	color: var(--clr-dark);
+	background-color: burlywood;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	overflow: hidden;
+}
+
+h1 {
+	font-size: 3rem;
+	/* border-bottom: 5px solid var(--clr-dark); */
+}
+
+.btn {
+	font-size: 40px;
+	font-weight: 700;
+	padding: 30px 60px;
+	color: bisque;
+	background-color: chocolate;
+	border: 10px solid bisque;
+	border-radius: 10px;
+
+	/* added a utility class */
+	/* transition: transition-property transition-duration transition-timing-function transition-delay; */
+	/* transition-property: all;  here we add the properties we want to animate (for example the properties in .btn:hover or use "all" keyword*/
+	/* transition-duration: 0.3s;
+	transition-timing-function: ease;
+	transition-delay: 0; */
+
+	/* added a utility class */
+	/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+	/* animation-name: skyDrop;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none; */
+}
+
+/* Utility classes */
+.animate {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+.animate.animate--infinite {
+	animation-iteration-count: infinite;
+}
+.animate.animate--delay-1s {
+	animation-delay: 1s;
+}
+.animate.animate--fast {
+	animation-duration: 0.6s;
+}
+.animate.animate--slow {
+	animation-duration: 3s;
+}
+
+/* Animations */
+@keyframes skyDrop {
+	from {
+		transform: translateY(-1000px);
+	}
+
+	to {
+		transform: translateY(0px);
+	}
+}
+
+.btn:hover {
+	/* transform: translateY(-10px); */
+	background-color: bisque;
+	color: burlywood;
+}
+
+.pushing {
+	/* transition: transition-property transition-duration transition-timing-function transition-delay; */
+	transition-property: all; /* here we add the properties we want to animate (for example the properties in .btn:hover or use "all" keyword*/
+	transition-duration: 0.3s;
+	transition-timing-function: ease;
+	transition-delay: 0;
+}
+
+.skyDrop {
+	/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+	animation-name: skyDrop;
+	/* animation-duration: 2s; */
+	animation-timing-function: ease;
+	/* animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none; */
+}
