@@ -37,6 +37,16 @@ h1 {
 	/* border-bottom: 5px solid var(--clr-dark); */
 }
 
+.sample {
+	font-size: 40px;
+	font-weight: 700;
+	padding: 30px 60px;
+	background-color: chocolate;
+	color: bisque;
+	border: 10px solid bisque;
+	border-radius: 40px;
+}
+
 .btn {
 	font-size: 40px;
 	font-weight: 700;
@@ -119,6 +129,19 @@ h1 {
 	}
 }
 
+@keyframes random {
+	0% {
+		transform: rotate(45deg) scale(1.5) translate(45px);
+		transform-origin: right;
+	}
+
+	90% {
+		transform: rotate3d(3, 2, 1, -45deg) scale3d(-1.5, 1, 1.5)
+			translate3d(-45px, 20px, 45px) skewX(60deg);
+		transform-origin: left;
+	}
+}
+
 .btn:hover {
 	/* transform: translateY(-10px); */
 	background-color: bisque;
@@ -145,5 +168,12 @@ h1 {
 	/* animation-delay: 0s;
     animation-iteration-count: 1;
     animation-direction: normal;
-    animation-fill-mode: none; */
+    animation-fill-mode: none; 
+    animation-play-state: running 
+    animation-timeline: auto  */
+}
+
+.random {
+	animation-name: random;
+	animation-timing-function: ease;
 }
