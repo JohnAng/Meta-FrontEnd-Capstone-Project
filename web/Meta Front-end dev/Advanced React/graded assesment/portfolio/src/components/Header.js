@@ -65,25 +65,54 @@ const Header = () => {
 				>
 					<nav>
 						{/* Add social media links based on the `socials` data */}
-						<a href={socials[0].url} target="_blank">
-							<FontAwesomeIcon icon={socials[0].icon} size="2x" />
-						</a>
-						<a href={socials[1].url} target="_blank">
-							<FontAwesomeIcon icon={socials[1].icon} size="2x" />
-						</a>
-						<a href={socials[2].url} target="_blank">
-							<FontAwesomeIcon icon={socials[2].icon} size="2x" />
-						</a>
-						<a href={socials[3].url} target="_blank">
-							<FontAwesomeIcon icon={socials[3].icon} size="2x" />
-						</a>
-						<a href={socials[4].url} target="_blank">
-							<FontAwesomeIcon icon={socials[4].icon} size="2x" />
-						</a>
+						<HStack spacing={8}>
+							<a href={socials[0].url} target="_blank">
+								<FontAwesomeIcon
+									icon={socials[0].icon}
+									size="2x"
+								/>
+							</a>
+							<a href={socials[1].url} target="_blank">
+								<FontAwesomeIcon
+									icon={socials[1].icon}
+									size="2x"
+								/>
+							</a>
+							<a href={socials[2].url} target="_blank">
+								<FontAwesomeIcon
+									icon={socials[2].icon}
+									size="2x"
+								/>
+							</a>
+							<a href={socials[3].url} target="_blank">
+								<FontAwesomeIcon
+									icon={socials[3].icon}
+									size="2x"
+								/>
+							</a>
+							<a href={socials[4].url} target="_blank">
+								<FontAwesomeIcon
+									icon={socials[4].icon}
+									size="2x"
+								/>
+							</a>
+						</HStack>
 					</nav>
 					<nav>
 						<HStack spacing={8}>
 							{/* Add links to Projects and Contact me section */}
+							<a
+								href="/#projects"
+								onClick={handleClick("projects")}
+							>
+								Projects
+							</a>
+							<a
+								href="/#contact-me"
+								onClick={handleClick("contactme")}
+							>
+								Contact Me
+							</a>
 						</HStack>
 					</nav>
 				</HStack>
