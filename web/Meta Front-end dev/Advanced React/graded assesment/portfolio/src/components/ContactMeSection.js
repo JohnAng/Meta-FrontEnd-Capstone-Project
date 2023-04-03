@@ -29,8 +29,9 @@ const LandingSection = () => {
 			comment: "",
 		},
 		onSubmit: (values, actions) => {
-			alert(JSON.stringify(values, null, 2));
-			actions.resetForm();
+			submit("", values);
+			onOpen(response.type, response.message);
+			response.type == "success" && actions.resetForm();
 		},
 		validationSchema: Yup.object({
 			firstName: Yup.string().required("Required"),
@@ -145,6 +146,7 @@ const LandingSection = () => {
 								type="submit"
 								colorScheme="purple"
 								width="full"
+								isLoading={isLoading}
 							>
 								Submit
 							</Button>
