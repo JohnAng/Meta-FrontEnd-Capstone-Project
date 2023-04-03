@@ -11,7 +11,7 @@ import {
 	VStack,
 } from "@chakra-ui/react";
 import { useFormik } from "formik";
-import React from "react";
+import React, { useEffect } from "react";
 import * as Yup from "yup";
 import { useAlertContext } from "../context/alertContext";
 import useSubmit from "../hooks/useSubmit";
@@ -25,23 +25,29 @@ const LandingSection = () => {
 		initialValues: {
 			firstName: "",
 			email: "",
-			type: "",
+			type: "hireMe",
 			comment: "",
 		},
 		onSubmit: (values, actions) => {
-			submit("", values);
-			onOpen(response.type, response.message);
-			response.type == "success" && actions.resetForm();
+			submit("https://example.com/contactme", values);
 		},
 		validationSchema: Yup.object({
 			firstName: Yup.string().required("Required"),
 			email: Yup.string().email("Invalid email").required("Required"),
-			type: "",
 			comment: Yup.string()
 				.min(25, "Must be at least 25 characyers")
 				.required("Required"),
 		}),
 	});
+
+	useEffect(() => {
+		if (response) {
+			onOpen(response.type, response.message);
+			if (response.type === "success") {
+				formik.resetForm();
+			}
+		}
+	}, [response]);
 
 	return (
 		<FullScreenSection
