@@ -7,7 +7,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 const socials = [
 	{
@@ -33,6 +33,33 @@ const socials = [
 ];
 
 const Header = () => {
+	const headerRef = useRef(null);
+
+	useEffect(() => {
+		let previousScrollPosition = window.scrollY;
+
+		const handleScroll = () => {
+			const currentScrollPosition = window.scrollY;
+			const headerElement = headerRef.current;
+
+			if (!headerElement) {
+				return;
+			}
+
+			if (previousScrollPosition > currentScrollPosition) {
+				headerElement.style.transform = "translateY(0)";
+			} else {
+				headerElement.style.transform = "translateY(-200px";
+			}
+			previousScrollPosition = currentScrollPosition;
+		};
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
+
 	const handleClick = (anchor) => () => {
 		const id = `${anchor}-section`;
 		const element = document.getElementById(id);
@@ -55,6 +82,7 @@ const Header = () => {
 			transitionDuration=".3s"
 			transitionTimingFunction="ease-in-out"
 			backgroundColor="#18181b"
+			ref={headerRef}
 		>
 			<Box color="white" maxWidth="1280px" margin="0 auto">
 				<HStack
