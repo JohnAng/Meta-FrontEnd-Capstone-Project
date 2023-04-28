@@ -2,11 +2,15 @@ import React from "react";
 import About from "./About";
 import ItemCard from "./ItemCard";
 import TestimonialCard from "./TestimonialCard";
+import Hero from "./Hero";
 
 export default function Main() {
 	return (
 		<main>
-			<section>Hero</section>
+			<section>
+				Hero
+				<Hero></Hero>
+			</section>
 			<section>
 				This Weeks Specials!
 				<ItemCard photo="" dish="" price="" description="">

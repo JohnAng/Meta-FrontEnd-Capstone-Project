@@ -1,27 +1,45 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../images/logo.jpg";
 
 export default function Nav() {
 	return (
-		<nav>
-			<ul>
-				<li>
-					<Link to="/">HOME</Link>
+		<nav className="navbar">
+			<div className="logo">
+				<Link style={{ textDecoration: "none" }} to="/">
+					<img src={logo} alt="Logo" className="navbar-logo" />
+				</Link>
+			</div>
+			<ul className="navbar-nav">
+				<li className="nav-item">
+					<Link style={{ textDecoration: "none" }} to="/">
+						Home
+					</Link>
 				</li>
-				<li>
-					<Link to="/About">ABOUT</Link>
+				<li className="nav-item">
+					<Link style={{ textDecoration: "none" }} to="/About">
+						About
+					</Link>
 				</li>
-				<li>
-					<Link to="/Menu">MENU</Link>
+				<li className="nav-item">
+					<Link style={{ textDecoration: "none" }} to="/Menu">
+						Menu
+					</Link>
 				</li>
-				<li>
-					<Link to="/Reservation">RESERVATION</Link>
+				<li className="nav-item">
+					<Link style={{ textDecoration: "none" }} to="/Reservation">
+						Reservation
+					</Link>
 				</li>
-				<li>
-					<Link to="/OnlineOrder">ONLINE ORDER</Link>
+				<li className="nav-item">
+					<Link style={{ textDecoration: "none" }} to="/OrderOnline">
+						Order Online
+					</Link>
 				</li>
-				<li>
-					<Link to="/Login">LOGIN</Link>
+				<li className="nav-item">
+					<Link style={{ textDecoration: "none" }} to="/Login">
+						Login
+					</Link>
 				</li>
 			</ul>
 		</nav>

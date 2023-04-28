@@ -1,14 +1,15 @@
-import "./App.css";
-import Footer from "./components/Footer";
+import "./styles/modern-normalize.css";
+import "./styles/style.css";
+import "./styles/components/nav.css";
+import "./styles/App.css";
 import Header from "./components/Header";
-import Main from "./components/Main";
 
 function App() {
 	return (
 		<>
 			<Header></Header>
-			<Main></Main>
-			<Footer></Footer>
+			{/* <Main></Main>
+			<Footer></Footer> */}
 		</>
 	);
 }
