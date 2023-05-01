@@ -1,17 +1,15 @@
 import React from "react";
 import About from "./About";
+import Hero from "./Hero";
 import ItemCard from "./ItemCard";
 import TestimonialCard from "./TestimonialCard";
-import Hero from "./Hero";
 
 export default function Main() {
 	return (
 		<main>
-			<section>
-				Hero
-				<Hero></Hero>
-			</section>
-			<section>
+			<Hero></Hero>
+
+			{/* <section>
 				This Weeks Specials!
 				<ItemCard photo="" dish="" price="" description="">
 					card1
@@ -41,7 +39,7 @@ export default function Main() {
 			<section>
 				About
 				<About></About>
-			</section>
+			</section> */}
 		</main>
 	);
 }

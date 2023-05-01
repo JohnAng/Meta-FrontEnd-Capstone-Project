@@ -38,16 +38,35 @@ picture,
 video,
 canvas,
 svg {
-  display: block;
-  max-width: 100%;
-  user-select: none;
+	display: block;
+	max-width: 100%;
+	user-select: none;
 }
 
 button {
-  display: inline-block;
-  padding: 0;
-  border: none;
-  background: none;
-  cursor: pointer;
-  color: inherit;
+	display: inline-block;
+	padding: 0;
+	border: none;
+	background: none;
+	cursor: pointer;
+	color: inherit;
+}
+
+h1 {
+	font-family: "Markazi Text", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 64px;
+	line-height: 77px;
+	color: #f4ce14;
+}
+
+p {
+	font-family: "Karla", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+
+	color: #ffffff;
 }
