@@ -1,53 +1,50 @@
-.hero-container {
+.hero__section {
 	background-color: var(--clr-green);
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
-	border: 1 solid red;
+	max-height: 300px;
 }
-
-.hero-section {
+div.container {
 	display: flex;
-	width: 85%;
-	margin: 0 auto;
 	justify-content: space-between;
+	padding: 15px 0;
+	flex-wrap: wrap;
 }
-
 section h1 {
-	margin: 0;
 	color: var(--clr-yellow);
 	font-family: "Markazi Text", sans-serif;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 64px;
-	line-height: 77px;
+	line-height: 50px;
+	margin: 0;
 }
 
 section h2 {
-	margin: 0;
 	color: white;
 	font-family: "Markazi Text", sans-serif;
 	font-size: 40px;
-	line-height: 0;
 	font-style: normal;
 	font-weight: 400;
+	margin: 0;
 }
 
 section p {
 	color: white;
 	font-family: "Karla", sans-serif;
 	font-size: 16px;
-	line-height: 1.5;
 	padding-top: 15px;
 	padding-bottom: 5px;
-	max-width: 29ch;
 	font-style: normal;
 	font-weight: 400;
+	margin: 0;
+	max-width: 26ch;
 }
 
-.hero-section button {
+.hero__section button {
 	background-color: var(--clr-yellow);
 	color: var(--clr-dark);
 	border-radius: 16px;
@@ -61,12 +58,29 @@ section p {
 	padding: 10px 20px;
 }
 
-.hero-container img {
+.hero__image {
 	border-radius: 16px;
-	position: relative;
-	width: 365px;
-	height: 344px;
-	top: 0px;
-	bottom: 199px;
-	padding: 0;
+	width: 35%;
+	height: 350px;
+}
+
+@media (max-width: 450px) {
+	.hero__image {
+		display: none;
+	}
+}
+
+/* lg */
+@media (min-width: 1024px) {
+	section h1 {
+		font-size: 84px;
+	}
+
+	section h2 {
+		font-size: 64px;
+	}
+
+	section p {
+		font-size: 21px;
+	}
 }
