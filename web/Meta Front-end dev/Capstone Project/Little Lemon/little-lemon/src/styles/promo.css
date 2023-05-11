@@ -24,7 +24,8 @@ article.card {
 	border-radius: 16px;
 	max-width: 224px;
 	height: 433px;
-	box-shadow: 2px 2px 2px 2px #7c8782;
+	border: 0.1rem solid grey;
+	/* box-shadow: 2px 2px 2px 2px #7c8782; */
 }
 
 article > img {
