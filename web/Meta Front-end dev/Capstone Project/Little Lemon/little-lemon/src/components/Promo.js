@@ -1,6 +1,6 @@
 import React from "react";
 import Bruschetta from "../images/10.jpg";
-import Salad from "../images/4.jpg";
+import Salad from "../images/5.jpg";
 import LemonDesert from "../images/lemon dessert.jpg";
 import ItemCard from "./ItemCard";
 

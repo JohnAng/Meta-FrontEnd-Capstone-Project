@@ -1,9 +1,9 @@
 import React from "react";
-import TestimonialCard from "./TestimonialCard";
-import profilePicture from "../images/testim1.png"
+import profilePicture from "../images/testim1.png";
 import profilePicture2 from "../images/testim2.png";
 import profilePicture3 from "../images/testim3.png";
 import profilePicture4 from "../images/testim4.png";
+import TestimonialCard from "./TestimonialCard";
 
 export default function Testimonials() {
 	return (
@@ -14,25 +14,25 @@ export default function Testimonials() {
 					rating={5}
 					photo={profilePicture}
 					name="John"
-					review=""
+					review="Awesome food!"
 				></TestimonialCard>
 				<TestimonialCard
 					rating={5}
 					photo={profilePicture2}
 					name="Annie"
-					review=""
+					review="Greek salad was a fresh and cool"
 				></TestimonialCard>
 				<TestimonialCard
 					rating={5}
 					photo={profilePicture3}
 					name="Victoria"
-					review=""
+					review="Bruschetta was tastefull and light"
 				></TestimonialCard>
 				<TestimonialCard
 					rating={5}
 					photo={profilePicture4}
 					name="Peter"
-					review=""
+					review="Great food and great space"
 				></TestimonialCard>
 			</div>
 		</section>
