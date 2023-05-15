@@ -7,8 +7,11 @@ import "../styles/promo.css";
 import "../styles/style.css";
 import "../styles/utils.css";
 import "../styles/testimonials.css";
+import "../styles/about.css"
 import Header from "./Header";
 import Main from "./Main";
+import Footer from "./Footer"
+
 
 function App() {
 	return (

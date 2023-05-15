@@ -1,0 +1,44 @@
+section.about {
+	display: flex;
+	flex-direction: row;
+	padding: 0px;
+}
+
+section h2.about {
+	color: var(--clr-yellow);
+	font-family: "Markazi Text", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 64px;
+	line-height: 50px;
+	margin: 0;
+}
+
+section h3.about {
+	color: var(--clr-dark);
+	font-family: "Markazi Text", sans-serif;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 400;
+	margin: 0;
+}
+
+article.about {
+	display: flex;
+	flex-direction: column;
+	padding: 0px;
+}
+
+p.about {
+	font-family: "Karla", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: var(--clr-dark);
+}
+
+img.about {
+	width: 250px;
+    height: 340px;
+}
