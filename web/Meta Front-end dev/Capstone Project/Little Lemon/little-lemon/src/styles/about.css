@@ -2,6 +2,7 @@ section.about {
 	display: flex;
 	flex-direction: row;
 	padding: 0px;
+	justify-content: space-between;
 }
 
 section h2.about {
@@ -39,6 +40,70 @@ p.about {
 }
 
 img.about {
-	width: 250px;
-    height: 340px;
+	height: 340px;
+	border-radius: 16px;
+	border: 0.1rem solid grey;
+	box-shadow: 0px 2px 4px rgb(84, 85, 85);
+	width: 49%;
 }
+
+div.about {
+	display: flex;
+}
+
+/* xs */
+@media (max-width: 475px) {
+	section.about {
+		flex-direction: column;
+	}
+
+	div.container.about {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	img.about {
+		width: 100%;
+	}
+}
+
+/* sm */
+@media (max-width: 640px) {
+	section.about {
+		flex-direction: column;
+	}
+
+	div.about {
+		flex-direction: column;
+	}
+
+	img.about {
+		width: 100%;
+	}
+}
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+@media (max-width: 1024px) {
+	section.about {
+		flex-direction: column;
+	}
+
+	div.about {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	img.about {
+		margin-bottom: 5px;
+	}
+}
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

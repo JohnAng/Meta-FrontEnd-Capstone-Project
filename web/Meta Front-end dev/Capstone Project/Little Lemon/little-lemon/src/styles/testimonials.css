@@ -22,6 +22,10 @@ article.testimonial__cards {
 	box-shadow: 0 2px 4px rgb(186, 188, 187);
 }
 
+div.profile-picture > img {
+	border-radius: 12px 12px 0px 0px;
+}
+
 .rating > img {
 	width: 25px;
 	display: inline;
@@ -34,11 +38,11 @@ div.rating {
 	align-items: center;
 }
 
-.profile-picture {
-	width: 100px;
+div.profile-picture {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 0px;
 }
 
 .profile-picture > p {
@@ -60,7 +64,7 @@ div p.Review {
 	div.container {
 		display: flex;
 		justify-content: space-evenly;
-		padding: 15px 0;
+		padding: 0px 0;
 		flex-wrap: wrap;
 	}
 }
@@ -70,13 +74,17 @@ div p.Review {
 	div.container {
 		display: flex;
 		justify-content: space-evenly;
-		padding: 15px 0;
+		padding: 0px 0;
 		flex-wrap: wrap;
 	}
 }
 
 /* lg */
-/* @media (min-width: 1024px) {} */
+@media (min-width: 1024px) {
+	article.testimonial__cards {
+		width: 240px;
+	}
+}
 
 /* xl */
 /* @media (min-width: 1280px) {} */

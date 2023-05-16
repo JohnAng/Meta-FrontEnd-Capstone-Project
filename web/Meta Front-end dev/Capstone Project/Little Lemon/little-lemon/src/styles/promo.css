@@ -22,7 +22,7 @@ article.card {
 	justify-content: space-between;
 	background-color: var(--clr-light);
 	border-radius: 16px;
-	max-width: 224px;
+	width: 300px;
 	height: 433px;
 	border: 0.1rem solid grey;
 	box-shadow: 0px 2px 4px rgb(84, 85, 85);
@@ -32,6 +32,7 @@ article.card {
 article > img {
 	border-radius: 16px 16px 0 0;
 	height: 176px;
+	object-fit: cover;
 }
 
 article > h3 {
@@ -55,8 +56,13 @@ p.orderNow {
 
 /* xs */
 @media (max-width: 475px) {
+	article.card {
+		width: 470px;
+	}
+
 	h2.promo {
 		padding-top: 0px;
+		text-align: center;
 	}
 	.container.main {
 		justify-content: center;
@@ -65,9 +71,6 @@ p.orderNow {
 		margin-left: 20%;
 		margin-right: 20%;
 		margin-bottom: 5px;
-	}
-	h2.promo {
-		text-align: center;
 	}
 }
 
@@ -78,13 +81,20 @@ p.orderNow {
 		height: 40px;
 		width: 150px;
 	}
+	article.card {
+		width: 400px;
+	}
 }
 
 /* md */
 /* @media (min-width: 768px) {} */
 
 /* lg */
-/* @media (min-width: 1024px) {} */
+@media (max-width: 1024px) {
+	article.card {
+		max-width: 250px;
+	}
+}
 
 /* xl */
 /* @media (min-width: 1280px) {} */

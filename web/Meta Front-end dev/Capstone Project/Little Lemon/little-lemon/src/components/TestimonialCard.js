@@ -12,11 +12,11 @@ export default function TestimonialCard(props) {
 	};
 	return (
 		<article className="testimonial__cards">
-			<div className="rating">{renderStars()}</div>
 			<div className="profile-picture container">
 				<img src={props.photo} alt="profile" />
 				<p>{props.name}</p>
 			</div>
+			<div className="rating">{renderStars()}</div>
 			<p className="Review">{props.review}</p>
 		</article>
 	);
