@@ -5,7 +5,8 @@ export default function TestimonialCard(props) {
 	const renderStars = () => {
 		const stars = [];
 		for (let star = 0; star < props.rating; star++) {
-			stars.push(<img src={Star} alt="Star Rating" />);
+			const starId = `${props.name} and ${props.rating} and ${star}`;
+			stars.push(<img src={Star} key={starId} alt="Star Rating" />);
 		}
 		return stars;
 	};

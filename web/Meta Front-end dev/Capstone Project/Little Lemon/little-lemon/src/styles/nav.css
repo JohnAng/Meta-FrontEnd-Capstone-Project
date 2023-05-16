@@ -9,6 +9,11 @@
 	position: relative;
 }
 
+.headerLine {
+	display: block;
+	background-color: var(--clr-green);
+	border: 5px solid var(--clr-green);
+}
 .header__logo {
 	max-width: 200px;
 }

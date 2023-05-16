@@ -107,6 +107,7 @@ export default function Header() {
 					</ul>
 				</nav>
 			</div>
+			<div className="headerLine"></div>
 		</>
 	);
 }

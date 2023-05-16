@@ -4,12 +4,16 @@ import Salad from "../images/5.jpg";
 import LemonDesert from "../images/lemon dessert.jpg";
 import ItemCard from "./ItemCard";
 
+import { NavLink } from "react-router-dom";
+
 export default function Promo() {
 	return (
 		<section className="promo__section">
 			<div className="container main">
 				<h2 className="promo">This weeks specials!</h2>
-				<button className="promo btn">order online</button>
+				<NavLink to="/OrderOnline">
+					<button className="promo btn">order online</button>
+				</NavLink>
 				<div className="container ">
 					<ItemCard
 						photo={Salad}
