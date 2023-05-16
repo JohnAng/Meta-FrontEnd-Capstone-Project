@@ -1,11 +1,6 @@
 import React from "react";
-import { NavLink, Route, Routes } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../images/logo.jpg";
-import About from "./About";
-import Login from "./Login";
-import Menu from "./Menu";
-import OrderOnline from "./OrderOnline";
-import Reservation from "./Reservation";
 
 export default function Header() {
 	return (
@@ -66,14 +61,6 @@ export default function Header() {
 					</button>
 				</nav>
 			</header>
-			<Routes>
-				{/* <Route path="/" element={<App />} /> */}
-				<Route path="/About" element={<About />} />
-				<Route path="/Menu" element={<Menu />} />
-				<Route path="/Reservation" element={<Reservation />} />
-				<Route path="/OrderOnline" element={<OrderOnline />} />
-				<Route path="/Login" element={<Login />} />
-			</Routes>
 			<div className="mobile-nav">
 				<NavLink to="/">
 					<img src={logo} alt="Logo" className="header__logo" />
