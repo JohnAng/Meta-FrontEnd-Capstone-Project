@@ -1,8 +1,9 @@
 section.about {
 	display: flex;
 	flex-direction: row;
-	padding: 0px;
+	padding-bottom: 30px;
 	justify-content: space-between;
+	padding-top: 30px;
 }
 
 section h2.about {

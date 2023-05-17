@@ -1,5 +1,7 @@
 .testimonial__section {
 	background-color: var(--clr-green);
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 h2.testimonials {

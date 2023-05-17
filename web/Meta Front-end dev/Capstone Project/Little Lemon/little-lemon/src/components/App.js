@@ -9,6 +9,7 @@ import "../styles/promo.css";
 import "../styles/style.css";
 import "../styles/testimonials.css";
 import "../styles/utils.css";
+import "../styles/footer.css"
 import About from "./About";
 import Header from "./Header";
 import Home from "./Home";
@@ -16,6 +17,7 @@ import Login from "./Login";
 import Menu from "./Menu";
 import OrderOnline from "./OrderOnline";
 import Reservation from "./Reservation";
+import Footer from "./Footer";
 
 function App() {
 	return (
@@ -29,7 +31,7 @@ function App() {
 				<Route path="/OrderOnline" element={<OrderOnline />} />
 				<Route path="/Login" element={<Login />} />
 			</Routes>
-			{/* <Footer></Footer> */}
+			<Footer></Footer>
 		</>
 	);
 }
