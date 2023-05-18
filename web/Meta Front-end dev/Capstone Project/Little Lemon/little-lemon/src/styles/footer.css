@@ -39,12 +39,12 @@ ul.footer__menu li :hover {
 	color: var(--clr-yellow);
 }
 
-svg {
+svg.footer {
 	fill: white;
 	display: inline;
 }
 
-svg:hover {
+svg.footer:hover {
 	fill: var(--clr-yellow);
 	display: inline;
 }
