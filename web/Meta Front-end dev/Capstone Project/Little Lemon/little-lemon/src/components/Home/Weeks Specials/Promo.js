@@ -2,9 +2,9 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import ItemCard from "./ItemCard";
 
-import Bruschetta from "../images/10.jpg";
-import Salad from "../images/5.jpg";
-import LemonDesert from "../images/lemon dessert.jpg";
+import Bruschetta from "../../../images/10.jpg";
+import Salad from "../../../images/5.jpg";
+import LemonDesert from "../../../images/lemon dessert.jpg";
 
 const specials = [
 	{

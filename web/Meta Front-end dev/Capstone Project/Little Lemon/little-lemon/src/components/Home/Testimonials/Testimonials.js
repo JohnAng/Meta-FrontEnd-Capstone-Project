@@ -1,10 +1,10 @@
 import React from "react";
 import TestimonialCard from "./TestimonialCard";
 
-import profilePicture from "../images/testim1.png";
-import profilePicture2 from "../images/testim2.png";
-import profilePicture3 from "../images/testim3.png";
-import profilePicture4 from "../images/testim4.png";
+import profilePicture from "../../../images/testim1.png";
+import profilePicture2 from "../../../images/testim2.png";
+import profilePicture3 from "../../../images/testim3.png";
+import profilePicture4 from "../../../images/testim4.png";
 
 const testimonials = [
 	{

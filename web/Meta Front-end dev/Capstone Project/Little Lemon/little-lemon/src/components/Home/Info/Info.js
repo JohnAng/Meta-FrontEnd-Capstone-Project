@@ -1,6 +1,6 @@
 import React from "react";
-import aboutimgA from "../images/Mario and Adrian A.jpg";
-import aboutimgB from "../images/Mario and Adrian b.jpg";
+import aboutimgA from "../../../images/Mario and Adrian A.jpg";
+import aboutimgB from "../../../images/Mario and Adrian b.jpg";
 
 export default function Info() {
 	return (

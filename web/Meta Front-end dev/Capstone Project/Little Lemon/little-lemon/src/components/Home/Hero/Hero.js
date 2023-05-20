@@ -1,5 +1,5 @@
 import React from "react";
-import heroImg from "../images/14.jpg";
+import heroImg from "../../../images/14.jpg"
 import { NavLink } from "react-router-dom";
 
 export default function Hero() {

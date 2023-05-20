@@ -1,8 +1,8 @@
 import React from "react";
-import Hero from "./Hero";
-import About from "./Info";
-import Promo from "./Promo";
-import Testimonials from "./Testimonials";
+import Hero from "./Hero/Hero";
+import About from "./Info/Info";
+import Promo from "./Weeks Specials/Promo";
+import Testimonials from "./Testimonials/Testimonials";
 
 export default function Main() {
 	return (

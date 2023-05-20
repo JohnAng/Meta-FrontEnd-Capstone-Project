@@ -1,5 +1,5 @@
 import React from "react";
-import Star from "../images/star.png";
+import Star from "../../../images/star.png";
 
 export default function TestimonialCard(props) {
 	const renderStars = () => {
