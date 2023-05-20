@@ -38,20 +38,20 @@ export default function Promo() {
 		<section className="promo__section">
 			<div className="container main">
 				<h2 className="promo">This week's specials!</h2>
-				<NavLink to="/OrderOnline">
+				<NavLink to="/OrderOnline" >
 					<button className="promo btn">order online</button>
 				</NavLink>
-				<div className="container">
-					{specials.map((special) => (
-						<ItemCard
-							key={special.id}
-							photo={special.photo}
-							dish={special.dish}
-							price={special.price}
-							description={special.description}
-						/>
-					))}
-				</div>
+			</div>
+			<div className="container card_container">
+				{specials.map((special) => (
+					<ItemCard
+						key={special.id}
+						photo={special.photo}
+						dish={special.dish}
+						price={special.price}
+						description={special.description}
+					/>
+				))}
 			</div>
 		</section>
 	);

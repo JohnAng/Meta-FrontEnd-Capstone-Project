@@ -59,13 +59,19 @@ div p.Review {
 }
 
 /* xs */
-/* @media (min-width: 475px) {} */
+@media (max-width: 360px) {
+	section.testimonial__section > div {
+		justify-content: center;
+	}
+	div > article.testimonial__card {
+		width: 300px;
+	}
+}
 
 /* sm */
 @media (max-width: 640px) {
 	div.container {
 		display: flex;
-		justify-content: space-evenly;
 		padding: 0px 0;
 		flex-wrap: wrap;
 	}
@@ -75,7 +81,6 @@ div p.Review {
 @media (max-width: 768px) {
 	div.container {
 		display: flex;
-		justify-content: space-evenly;
 		padding: 0px 0;
 		flex-wrap: wrap;
 	}

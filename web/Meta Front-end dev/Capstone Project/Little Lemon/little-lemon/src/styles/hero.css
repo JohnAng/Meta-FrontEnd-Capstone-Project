@@ -68,6 +68,16 @@ section p.hero-p {
 	.hero__image {
 		display: none;
 	}
+	section.hero__section > div {
+		justify-content: center;
+	}
+
+	div.hero-description {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 /* lg */

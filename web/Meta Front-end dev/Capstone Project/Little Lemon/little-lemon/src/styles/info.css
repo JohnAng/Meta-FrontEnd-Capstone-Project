@@ -1,12 +1,28 @@
-section.about {
-	display: flex;
-	flex-direction: row;
+section.info {
+	/* display: flex;
+	flex-direction: row; */
 	padding-bottom: 30px;
 	justify-content: space-between;
 	padding-top: 30px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
-section h2.about {
+.info__section {
+	padding-bottom: 30px;
+	justify-content: space-between;
+	padding-top: 30px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.info__section > div.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+section h2.info {
 	color: var(--clr-yellow);
 	font-family: "Markazi Text", sans-serif;
 	font-style: normal;
@@ -16,7 +32,7 @@ section h2.about {
 	margin: 0;
 }
 
-section h3.about {
+section h3.info {
 	color: var(--clr-dark);
 	font-family: "Markazi Text", sans-serif;
 	font-size: 40px;
@@ -25,22 +41,24 @@ section h3.about {
 	margin: 0;
 }
 
-article.about {
+article.info {
 	display: flex;
 	flex-direction: column;
 	padding: 0px;
 }
 
-p.about {
+p.info {
 	font-family: "Karla", sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 19px;
 	color: var(--clr-dark);
+	margin-right: 0px;
+	margin-left: 0px;
 }
 
-img.about {
+img.info {
 	height: 340px;
 	border-radius: 16px;
 	border: 0.1rem solid grey;
@@ -48,38 +66,38 @@ img.about {
 	width: 49%;
 }
 
-div.about {
+div.info {
 	display: flex;
 }
 
 /* xs */
 @media (max-width: 475px) {
-	section.about {
+	section.info {
 		flex-direction: column;
 	}
 
-	div.container.about {
+	div.container.info {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 
-	img.about {
+	img.info {
 		width: 100%;
 	}
 }
 
 /* sm */
 @media (max-width: 640px) {
-	section.about {
+	section.info {
 		flex-direction: column;
 	}
 
-	div.about {
+	div.info {
 		flex-direction: column;
 	}
 
-	img.about {
+	img.info {
 		width: 100%;
 	}
 }
@@ -89,16 +107,21 @@ div.about {
 
 /* lg */
 @media (max-width: 1024px) {
-	section.about {
+	.info__section > div.container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	section.info {
 		flex-direction: column;
 	}
 
-	div.about {
+	div.info {
 		flex-direction: row;
 		align-items: center;
 	}
 
-	img.about {
+	img.info {
 		margin-bottom: 5px;
 	}
 }
