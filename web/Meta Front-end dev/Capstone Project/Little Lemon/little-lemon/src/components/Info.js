@@ -2,7 +2,7 @@ import React from "react";
 import aboutimgA from "../images/Mario and Adrian A.jpg";
 import aboutimgB from "../images/Mario and Adrian b.jpg";
 
-export default function About() {
+export default function Info() {
 	return (
 		<section className="container about">
 			<article className="container about">

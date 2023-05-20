@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import "../styles/App.css";
-import "../styles/about.css";
+import "../styles/info.css";
+import "../styles/footer.css";
 import "../styles/hero.css";
 import "../styles/mobile-nav.css";
 import "../styles/modern-normalize.css";
@@ -9,15 +10,14 @@ import "../styles/promo.css";
 import "../styles/style.css";
 import "../styles/testimonials.css";
 import "../styles/utils.css";
-import "../styles/footer.css"
-import About from "./About";
-import Header from "./Header";
-import Home from "./Home";
-import Login from "./Login";
-import Menu from "./Menu";
-import OrderOnline from "./OrderOnline";
-import Reservation from "./Reservation";
 import Footer from "./Footer";
+import Header from "./Header";
+import About from "./Route/About"
+import Login from "./Route/Login";
+import Home from "./Route/Home";
+import Menu from "./Route/Menu";
+import OrderOnline from "./Route/OrderOnline";
+import Reservation from "./Route/Reservation";
 
 function App() {
 	return (
