@@ -1,19 +1,19 @@
 import React, { useReducer } from "react";
 import { Route, Routes } from "react-router-dom";
-import "../styles/App.css";
-import "../styles/footer.css";
-import "../styles/hero.css";
-import "../styles/info.css";
-import "../styles/mobile-nav.css";
+import "./App.css"
+import "./layout/footer.css"
+import "./Home/Hero/hero.css"
+import "./Home/Info/info.css"
+import "./layout/mobile-nav.css"
 import "../styles/modern-normalize.css";
-import "../styles/nav.css";
-import "../styles/promo.css";
-import "../styles/reservation.css";
+import "./layout/nav.css";
+import "./Home/Weeks Specials/promo.css"
+import "./Reservation/reservation.css"
 import "../styles/style.css";
-import "../styles/testimonials.css";
+import "./Home/Testimonials/testimonials.css"
 import "../styles/utils.css";
-import Footer from "./Footer";
-import Header from "./Header";
+import Footer from "./layout/Footer";
+import Header from "./layout/Header";
 import About from "./Route/About";
 import Home from "./Route/Home";
 import Login from "./Route/Login";
