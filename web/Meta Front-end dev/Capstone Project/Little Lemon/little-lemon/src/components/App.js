@@ -1,5 +1,5 @@
 import React, { useReducer } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Router } from "react-router-dom";
 import "./App.css"
 import "./layout/footer.css"
 import "./Home/Hero/hero.css"

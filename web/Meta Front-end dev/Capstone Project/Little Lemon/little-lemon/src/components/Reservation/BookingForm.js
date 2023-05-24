@@ -5,6 +5,7 @@ const initialFormData = {
 	time: "17:00",
 	guests: "1",
 	occasion: "Date",
+	name: "",
 };
 
 function BookingForm({ availableTimes, updateTimes }) {
@@ -41,6 +42,7 @@ function BookingForm({ availableTimes, updateTimes }) {
 							name="date"
 							value={formData.date}
 							onChange={handleChange}
+							required
 						/>
 					</div>
 					<div className="formlabel">
@@ -83,6 +85,17 @@ function BookingForm({ availableTimes, updateTimes }) {
 							<option>Birthday</option>
 							<option>Anniversary</option>
 						</select>
+					</div>
+					<div className="formlabel">
+						<label htmlFor="name">Name</label>
+						<input
+							type="text"
+							id="name"
+							name="name"
+							value={formData.name}
+							onChange={handleChange}
+							required
+						/>
 					</div>
 					<div className="formlabel submit">
 						<button type="submit" className="btn">

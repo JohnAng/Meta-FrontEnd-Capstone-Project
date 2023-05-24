@@ -36,6 +36,7 @@ div.formlabel {
 div.container > img.reservation_image {
 	width: 100%;
 	height: 300px;
+	border-radius: 16px;
 	object-fit: cover;
 }
 
