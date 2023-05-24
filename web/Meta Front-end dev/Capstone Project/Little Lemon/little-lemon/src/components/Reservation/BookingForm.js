@@ -7,7 +7,7 @@ const initialFormData = {
 	occasion: "Date",
 };
 
-function BookingForm({ availableTimes }) {
+function BookingForm({ availableTimes, updateTimes }) {
 	const [formData, setFormData] = useState(initialFormData);
 
 	const handleSubmit = (e) => {
@@ -48,8 +48,12 @@ function BookingForm({ availableTimes }) {
 							onChange={handleChange}
 						>
 							{availableTimes.map((timeOption) => (
-								<option key={timeOption.time}>
-									{timeOption.available && timeOption.time}
+								<option
+									key={timeOption.time}
+									disabled={!timeOption.available}
+									value={timeOption.time}
+								>
+									{timeOption.time}
 								</option>
 							))}
 						</select>

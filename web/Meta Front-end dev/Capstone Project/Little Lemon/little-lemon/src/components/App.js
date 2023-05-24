@@ -70,7 +70,12 @@ function App() {
 				<Route path="/Menu" element={<Menu />} />
 				<Route
 					path="/Reservation"
-					element={<Reservation availableTimes={availableTimes} />}
+					element={
+						<Reservation
+							availableTimes={availableTimes}
+							updateTimes={updateTimes}
+						/>
+					}
 				/>
 				<Route path="/OrderOnline" element={<OrderOnline />} />
 				<Route path="/Login" element={<Login />} />
