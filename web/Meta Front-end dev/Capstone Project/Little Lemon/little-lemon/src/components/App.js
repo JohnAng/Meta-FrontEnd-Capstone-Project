@@ -1,4 +1,4 @@
-import { useReducer } from "react";
+import React, { useReducer } from "react";
 import { Route, Routes } from "react-router-dom";
 import "../styles/App.css";
 import "../styles/footer.css";

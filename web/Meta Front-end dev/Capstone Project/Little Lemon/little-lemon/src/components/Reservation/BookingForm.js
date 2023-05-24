@@ -23,6 +23,10 @@ function BookingForm({ availableTimes, updateTimes }) {
 			...prevData,
 			[name]: value,
 		}));
+
+		if (name === "date") {
+			updateTimes(value); // Call updateTimes with the selected date value
+		}
 	};
 
 	return (
@@ -48,12 +52,8 @@ function BookingForm({ availableTimes, updateTimes }) {
 							onChange={handleChange}
 						>
 							{availableTimes.map((timeOption) => (
-								<option
-									key={timeOption.time}
-									disabled={!timeOption.available}
-									value={timeOption.time}
-								>
-									{timeOption.time}
+								<option key={timeOption.time}>
+									{timeOption.available && timeOption.time}
 								</option>
 							))}
 						</select>
