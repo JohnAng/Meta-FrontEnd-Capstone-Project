@@ -26,9 +26,11 @@ function BookingForm({ availableTimes, updateTimes }) {
 		}));
 
 		if (name === "date") {
-			updateTimes(value); // Call updateTimes with the selected date value
+			const selectedDate = new Date(value); // Convert the selected date to a Date object
+			updateTimes(selectedDate); // Call updateTimes with the selected date as a Date object
 		}
 	};
+
 
 	return (
 		<section className="bookingForm__section">

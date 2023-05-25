@@ -20,45 +20,39 @@ import Header from "./layout/Header";
 import "./layout/footer.css";
 import "./layout/mobile-nav.css";
 import "./layout/nav.css";
-
-const initialAvailableTimes = [
-	{ time: "17:00", available: true },
-	{ time: "18:00", available: true },
-	{ time: "19:00", available: true },
-	{ time: "20:00", available: true },
-	{ time: "21:00", available: true },
-	{ time: "22:00", available: true },
-];
-
-const initializeTimes = () => {
-	// Generate the initial state for availableTimes
-	// For now, return the same initial available times
-	return initialAvailableTimes;
-};
-
-const availableTimesReducer = (state, action) => {
-	switch (action.type) {
-		case "INITIALIZE_TIMES":
-			return initializeTimes();
-		case "UPDATE_TIMES":
-			// Update the available times based on the selected date
-			// For now, return the same available times regardless of the date
-			return [...state];
-		default:
-			return state;
-	}
-};
+import { fetchAPI } from "../API/api";
 
 function App() {
+	const initializeTimes = () => {
+		const today = new Date();
+		const availableTimes = fetchAPI(today);
+		return availableTimes.map((time) => ({ time, available: true }));
+	};
+
+	const availableTimesReducer = (state, action) => {
+		switch (action.type) {
+			case "INITIALIZE_TIMES":
+				return initializeTimes();
+			case "UPDATE_TIMES":
+				return action.availableTimes.map((time) => ({
+					time,
+					available: true,
+				}));
+			default:
+				return state;
+		}
+	};
+
 	const [availableTimes, dispatch] = useReducer(
 		availableTimesReducer,
 		[],
 		initializeTimes
 	);
 
-	const updateTimes = (selectedDate) => {
-		// Dispatch an action to update the available times based on the selected date
-		dispatch({ type: "UPDATE_TIMES", selectedDate });
+	const updateTimes = (date) => {
+		const selectedDate = new Date(date);
+		const availableTimes = fetchAPI(selectedDate);
+		dispatch({ type: "UPDATE_TIMES", availableTimes });
 	};
 
 	return (

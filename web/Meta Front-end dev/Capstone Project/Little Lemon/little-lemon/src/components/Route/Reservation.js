@@ -18,7 +18,7 @@ export default function Reservation({ availableTimes, updateTimes }) {
 			<BookingForm
 				availableTimes={availableTimes}
 				updateTimes={updateTimes}
-			></BookingForm>
+			/>
 		</>
 	);
 }
