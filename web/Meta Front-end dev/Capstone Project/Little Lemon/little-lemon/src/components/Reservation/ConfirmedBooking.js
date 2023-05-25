@@ -12,31 +12,33 @@ export default function ConfirmedBooking({ formData }) {
 					Restaurant
 				</p>
 
-				{/* <h4>Reservation Details:</h4>
-				<table>
-					<tbody>
-						<tr>
-							<td>Date:</td>
-							<td>{formData.date}</td>
-						</tr>
-						<tr>
-							<td>Time:</td>
-							<td>{formData.time}</td>
-						</tr>
-						<tr>
-							<td>Guests:</td>
-							<td>{formData.guests}</td>
-						</tr>
-						<tr>
-							<td>Occasion:</td>
-							<td>{formData.occasion}</td>
-						</tr>
-						<tr>
-							<td>Name:</td>
-							<td>{formData.name}</td>
-						</tr>
-					</tbody>
-				</table> */}
+				<h3>Reservation Details</h3>
+				<fieldset>
+					<table>
+						<tbody>
+							<tr>
+								<td>Date:</td>
+								<td>{formData.date}</td>
+							</tr>
+							<tr>
+								<td>Time:</td>
+								<td>{formData.time}</td>
+							</tr>
+							<tr>
+								<td>Guests:</td>
+								<td>{formData.guests}</td>
+							</tr>
+							<tr>
+								<td>Occasion:</td>
+								<td>{formData.occasion}</td>
+							</tr>
+							<tr>
+								<td>Name:</td>
+								<td>{formData.name}</td>
+							</tr>
+						</tbody>
+					</table>
+				</fieldset>
 			</div>
 		</section>
 	);

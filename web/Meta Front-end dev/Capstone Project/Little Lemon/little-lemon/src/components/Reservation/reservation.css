@@ -13,7 +13,11 @@ section.bookingForm__section {
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
-
+fieldset.form {
+	padding: 30px;
+	background-color: var(--clr-light);
+	border-radius: 16px;
+}
 div.form_container {
 	display: flex;
 	justify-content: center;
@@ -46,7 +50,18 @@ div.success {
 	align-items: center;
 	gap: 20px;
 }
-
+td {
+	padding: 5px 10px;
+	text-align: center;
+}
+td:nth-child(1) {
+	color: var(--clr-green);
+	font-weight: 900;
+}
+td:nth-child(2) {
+	color: var(--clr-secondary1);
+	font-weight: 400;
+}
 p.success {
 	color: var(--clr-dark);
 }
