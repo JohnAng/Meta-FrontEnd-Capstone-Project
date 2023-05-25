@@ -1,25 +1,25 @@
 import React, { useReducer } from "react";
-import { Route, Routes, Router } from "react-router-dom";
-import "./App.css"
-import "./layout/footer.css"
-import "./Home/Hero/hero.css"
-import "./Home/Info/info.css"
-import "./layout/mobile-nav.css"
+import { Route, Routes } from "react-router-dom";
 import "../styles/modern-normalize.css";
-import "./layout/nav.css";
-import "./Home/Weeks Specials/promo.css"
-import "./Reservation/reservation.css"
 import "../styles/style.css";
-import "./Home/Testimonials/testimonials.css"
 import "../styles/utils.css";
-import Footer from "./layout/Footer";
-import Header from "./layout/Header";
+import "./App.css";
+import "./Home/Hero/hero.css";
+import "./Home/Info/info.css";
+import "./Home/Testimonials/testimonials.css";
+import "./Home/Weeks Specials/promo.css";
+import "./Reservation/reservation.css";
 import About from "./Route/About";
 import Home from "./Route/Home";
 import Login from "./Route/Login";
 import Menu from "./Route/Menu";
 import OrderOnline from "./Route/OrderOnline";
 import Reservation from "./Route/Reservation";
+import Footer from "./layout/Footer";
+import Header from "./layout/Header";
+import "./layout/footer.css";
+import "./layout/mobile-nav.css";
+import "./layout/nav.css";
 
 const initialAvailableTimes = [
 	{ time: "17:00", available: true },
