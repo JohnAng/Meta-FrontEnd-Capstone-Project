@@ -40,6 +40,16 @@ div.container > img.reservation_image {
 	object-fit: cover;
 }
 
+div.success {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+p.success {
+	color: var(--clr-dark);
+}
 label {
 	color: var(--clr-green);
 	font-family: "Karla", sans-serif;
@@ -48,7 +58,7 @@ label {
 }
 
 div.submit {
-    align-items: center;
+	align-items: center;
 }
 
 input,

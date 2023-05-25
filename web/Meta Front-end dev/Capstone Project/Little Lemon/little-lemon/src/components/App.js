@@ -1,5 +1,6 @@
 import React, { useReducer } from "react";
 import { Route, Routes } from "react-router-dom";
+import { fetchAPI } from "../API/api";
 import "../styles/modern-normalize.css";
 import "../styles/style.css";
 import "../styles/utils.css";
@@ -8,6 +9,7 @@ import "./Home/Hero/hero.css";
 import "./Home/Info/info.css";
 import "./Home/Testimonials/testimonials.css";
 import "./Home/Weeks Specials/promo.css";
+import ConfirmedBooking from "./Reservation/ConfirmedBooking";
 import "./Reservation/reservation.css";
 import About from "./Route/About";
 import Home from "./Route/Home";
@@ -20,7 +22,6 @@ import Header from "./layout/Header";
 import "./layout/footer.css";
 import "./layout/mobile-nav.css";
 import "./layout/nav.css";
-import { fetchAPI } from "../API/api";
 
 function App() {
 	const initializeTimes = () => {
@@ -55,6 +56,16 @@ function App() {
 		dispatch({ type: "UPDATE_TIMES", availableTimes });
 	};
 
+	const submitForm = (formData) => {
+		// Perform any necessary actions here, such as sending form data to an API or displaying a confirmation message.
+		// You can access the form data from the formData parameter.
+		// For testing purposes, we'll log the form data to the console.
+		console.log(formData);
+
+		// Reset the form after submission
+		dispatch({ type: "INITIALIZE_TIMES" });
+	};
+
 	return (
 		<>
 			<Header></Header>
@@ -68,9 +79,15 @@ function App() {
 						<Reservation
 							availableTimes={availableTimes}
 							updateTimes={updateTimes}
+							submitForm={submitForm}
 						/>
 					}
 				/>
+				<Route
+					path="/Reservation/ConfirmedBooking"
+					element={<ConfirmedBooking />}
+				/>
+
 				<Route path="/OrderOnline" element={<OrderOnline />} />
 				<Route path="/Login" element={<Login />} />
 			</Routes>

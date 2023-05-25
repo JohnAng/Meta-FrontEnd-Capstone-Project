@@ -61,6 +61,11 @@ p.orderNow {
 	color: var(--clr-dark);
 	margin: 5px;
 }
+img.delivery {
+	display: inline;
+	width: 30px;
+
+}
 
 @media (min-width:360px) {
 	.card {

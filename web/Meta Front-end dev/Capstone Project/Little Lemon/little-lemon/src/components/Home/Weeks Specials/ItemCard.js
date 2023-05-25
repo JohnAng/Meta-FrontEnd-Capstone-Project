@@ -1,4 +1,5 @@
 import React from "react";
+import delivery from "../../../images/icons8-motorbike-64.png";
 
 export default function ItemCard(props) {
 	return (
@@ -9,7 +10,10 @@ export default function ItemCard(props) {
 				<span>{props.price}</span>
 			</div>
 			<p>{props.description}</p>
-			<p className="orderNow">Order Now {"->"}</p>
+			<p className="orderNow">
+				Order Now {"  "}
+				<img src={delivery} alt="delivery" className="delivery" />
+			</p>
 		</article>
 	);
 }

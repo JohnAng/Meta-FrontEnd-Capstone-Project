@@ -1,8 +1,12 @@
 import React from "react";
-import BookingForm from "../Reservation/BookingForm";
 import restaurant from "../../images/restaurant.jpg";
+import BookingForm from "../Reservation/BookingForm";
 
-export default function Reservation({ availableTimes, updateTimes }) {
+export default function Reservation({
+	availableTimes,
+	updateTimes,
+	submitForm,
+}) {
 	return (
 		<>
 			<section className="booking__section">
@@ -18,6 +22,7 @@ export default function Reservation({ availableTimes, updateTimes }) {
 			<BookingForm
 				availableTimes={availableTimes}
 				updateTimes={updateTimes}
+				submitForm={submitForm}
 			/>
 		</>
 	);
