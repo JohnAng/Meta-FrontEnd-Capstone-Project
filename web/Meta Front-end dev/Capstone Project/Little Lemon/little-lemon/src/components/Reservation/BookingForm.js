@@ -38,8 +38,8 @@ function BookingForm({ availableTimes, updateTimes, submitForm }) {
 				{isSubmitted ? (
 					<ConfirmedBooking formData={formData} />
 				) : (
-					<fieldset className="form">
-						<form className="bookingForm" role="form" onSubmit={handleSubmit}>
+					<fieldset className="formfield">
+						<form className="bookingForm"  onSubmit={handleSubmit}>
 							<div className="formlabel">
 								<label htmlFor="res-date">Date</label>
 								<input
