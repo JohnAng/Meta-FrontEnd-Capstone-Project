@@ -16,7 +16,6 @@ function BookingForm({ availableTimes, updateTimes, submitForm }) {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		submitForm(formData);
-		// setFormData(initialFormData);
 		setIsSubmitted(true);
 	};
 
@@ -40,7 +39,7 @@ function BookingForm({ availableTimes, updateTimes, submitForm }) {
 					<ConfirmedBooking formData={formData} />
 				) : (
 					<fieldset className="form">
-						<form className="bookingForm" onSubmit={handleSubmit}>
+						<form className="bookingForm" role="form" onSubmit={handleSubmit}>
 							<div className="formlabel">
 								<label htmlFor="res-date">Date</label>
 								<input
@@ -111,14 +110,12 @@ function BookingForm({ availableTimes, updateTimes, submitForm }) {
 									type="submit"
 									className={
 										formData.name.length < 3 ||
-										formData.name.includes("  ")
+										formData.name.includes("  ") ||
+										formData.date === "mm/dd/yyyy"
 											? "btn-disabled"
 											: "btn"
 									}
-									disabled={
-										formData.name.length < 3 ||
-										formData.name.includes("  ")
-									}
+									disabled={formData.date === "mm/dd/yyyy" || formData.name.length < 3}
 									aria-label="On Click"
 								>
 									Reserve a table
