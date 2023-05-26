@@ -1,0 +1,100 @@
+.testimonial__section {
+	background-color: var(--clr-green);
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+h2.testimonials {
+	font-family: "Markazi Text", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 64px;
+	line-height: 77px;
+	color: var(--clr-light);
+	text-align: center;
+}
+
+article.testimonial__cards {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--clr-light);
+	border-radius: 16px;
+	width: 180px;
+	margin-top: 5px;
+	box-shadow: 0 2px 4px rgb(186, 188, 187);
+}
+
+div.profile-picture > img {
+	border-radius: 12px 12px 0px 0px;
+}
+
+.rating > img {
+	width: 25px;
+	display: inline;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+div.rating {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+div.profile-picture {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+}
+
+.profile-picture > p {
+	color: var(--clr-dark);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+div p.Review {
+	text-align: center;
+}
+
+/* xs */
+@media (max-width: 360px) {
+	section.testimonial__section > div {
+		justify-content: center;
+	}
+	div > article.testimonial__card {
+		width: 300px;
+	}
+}
+
+/* sm */
+@media (max-width: 640px) {
+	div.container {
+		display: flex;
+		padding: 0px 0;
+		flex-wrap: wrap;
+	}
+}
+
+/* md */
+@media (max-width: 768px) {
+	div.container {
+		display: flex;
+		padding: 0px 0;
+		flex-wrap: wrap;
+	}
+}
+
+/* lg */
+@media (min-width: 1024px) {
+	article.testimonial__cards {
+		width: 240px;
+	}
+}
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

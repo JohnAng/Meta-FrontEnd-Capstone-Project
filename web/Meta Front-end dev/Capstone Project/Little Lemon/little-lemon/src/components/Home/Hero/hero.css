@@ -1,0 +1,96 @@
+.hero__section {
+	background-color: var(--clr-green);
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	max-height: 300px;
+}
+div.container {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 0;
+	flex-wrap: wrap;
+}
+section h1 {
+	color: var(--clr-yellow);
+	font-family: "Markazi Text", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 64px;
+	line-height: 50px;
+	margin: 0;
+}
+
+section h2 {
+	color: white;
+	font-family: "Markazi Text", sans-serif;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 400;
+	margin: 0;
+}
+
+section p.hero-p {
+	color: white;
+	font-family: "Karla", sans-serif;
+	font-size: 16px;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	font-style: normal;
+	font-weight: 400;
+	margin: 0;
+	max-width: 26ch;
+}
+
+.hero__section button {
+	background-color: var(--clr-yellow);
+	color: var(--clr-dark);
+	border-radius: 16px;
+	font-family: "Karla", sans-serif;
+	font-size: 16px;
+	max-width: 250px;
+	max-height: 82px;
+	border: 0px;
+	font-style: normal;
+	font-weight: 500;
+	padding: 10px 20px;
+}
+
+.hero__image {
+	border-radius: 16px;
+	width: 35%;
+	height: 350px;
+}
+
+@media (max-width: 475px) {
+	.hero__image {
+		display: none;
+	}
+	section.hero__section > div {
+		justify-content: center;
+	}
+
+	div.hero-description {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+/* lg */
+@media (min-width: 1024px) {
+	section h1 {
+		font-size: 84px;
+	}
+
+	section h2 {
+		font-size: 64px;
+	}
+
+	section p.hero-p {
+		font-size: 21px;
+	}
+}

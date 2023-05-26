@@ -1,0 +1,54 @@
+section.footer-container {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: var(--clr-green);
+}
+
+div.container > img.footer-logo {
+	max-width: 150px;
+}
+
+ul.footer__menu li {
+	list-style-type: none;
+	text-decoration: none;
+	color: white;
+}
+
+.footer__link {
+	text-decoration: none;
+	color: inherit;
+}
+
+.footer__link:visited {
+	color: inherit;
+}
+
+ul.socials li {
+	list-style-type: none;
+	text-decoration: none;
+	color: white;
+}
+
+ul.socials li :hover {
+	color: var(--clr-yellow);
+}
+
+ul.footer__menu li :hover {
+	list-style-type: none;
+	text-decoration: none;
+	color: var(--clr-yellow);
+}
+
+svg.footer {
+	fill: white;
+	display: inline;
+}
+
+svg.footer:hover {
+	fill: var(--clr-yellow);
+	display: inline;
+}
+
+ul > h4 {
+	color: var(--clr-secondary1);
+}

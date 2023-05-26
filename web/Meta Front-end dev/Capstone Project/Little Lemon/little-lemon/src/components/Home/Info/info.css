@@ -1,0 +1,134 @@
+section.info {
+	/* display: flex;
+	flex-direction: row; */
+	padding-bottom: 30px;
+	justify-content: space-between;
+	padding-top: 30px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.info__section {
+	padding-bottom: 30px;
+	justify-content: space-between;
+	padding-top: 30px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.info__section > div.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+section h2.info {
+	color: var(--clr-yellow);
+	font-family: "Markazi Text", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 64px;
+	line-height: 50px;
+	margin: 0;
+}
+
+section h3.info {
+	color: var(--clr-dark);
+	font-family: "Markazi Text", sans-serif;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 400;
+	margin: 0;
+}
+
+article.info {
+	display: flex;
+	flex-direction: column;
+	padding: 0px;
+}
+
+p.info {
+	font-family: "Karla", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: var(--clr-dark);
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+img.info {
+	height: 340px;
+	border-radius: 16px;
+	border: 0.1rem solid grey;
+	box-shadow: 0px 2px 4px rgb(84, 85, 85);
+	width: 49%;
+	object-fit: cover;
+}
+
+div.info {
+	display: flex;
+}
+
+/* xs */
+@media (max-width: 475px) {
+	section.info {
+		flex-direction: column;
+	}
+
+	div.container.info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	img.info {
+		width: 100%;
+	}
+}
+
+/* sm */
+@media (max-width: 640px) {
+	section.info {
+		flex-direction: column;
+	}
+
+	div.info {
+		flex-direction: column;
+	}
+
+	img.info {
+		width: 100%;
+	}
+}
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+@media (max-width: 1024px) {
+	.info__section > div.container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	section.info {
+		flex-direction: column;
+	}
+
+	div.info {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	img.info {
+		margin-bottom: 5px;
+	}
+}
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
