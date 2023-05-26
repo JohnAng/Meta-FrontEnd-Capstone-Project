@@ -95,18 +95,32 @@ function BookingForm({ availableTimes, updateTimes, submitForm }) {
 								</select>
 							</div>
 							<div className="formlabel">
-								<label htmlFor="name">Name</label>
+								<label htmlFor="name">Name*</label>
 								<input
 									type="text"
 									id="name"
 									name="name"
+									minLength={3}
 									value={formData.name}
 									onChange={handleChange}
 									required
 								/>
 							</div>
 							<div className="formlabel submit">
-								<button type="submit" className="btn">
+								<button
+									type="submit"
+									className={
+										formData.name.length < 3 ||
+										formData.name.includes("  ")
+											? "btn-disabled"
+											: "btn"
+									}
+									disabled={
+										formData.name.length < 3 ||
+										formData.name.includes("  ")
+									}
+									aria-label="On Click"
+								>
 									Reserve a table
 								</button>
 							</div>

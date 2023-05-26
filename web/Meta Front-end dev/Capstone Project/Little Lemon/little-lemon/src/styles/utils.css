@@ -30,6 +30,26 @@
 	padding: 10px 20px;
 }
 
+.btn-disabled {
+	background-color: var(--clr-light);
+	color: var(--clr-dark);
+	border: 1px solid var(--clr-dark);
+	border-radius: 16px;
+	font-family: "Karla", sans-serif;
+	font-size: 16px;
+	max-width: 250px;
+	max-height: 82px;
+	font-style: normal;
+	font-weight: 500;
+	padding: 10px 20px;
+}
+
+.btn-disabled:hover {
+	background-color: var(--clr-dark);
+	color: var(--clr-light);
+	transition: 0.1s ease-in;
+}
+
 .btn:hover {
 	background-color: var(--clr-dark);
 	color: var(--clr-yellow);
@@ -56,25 +76,25 @@
 }
 /* sm */
 @media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
+	.container {
+		max-width: 640px;
+	}
 }
 
 /* md */
 @media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
+	.container {
+		max-width: 768px;
+	}
 }
 
 /* lg */
 @media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
+	.container {
+		max-width: 1024px;
+	}
 
-  /* .section {
+	/* .section {
     margin-top: 10rem;
   } */
 }
